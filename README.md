@@ -4,17 +4,78 @@ Introducción
 
 La materia Procesamiento del Lenguaje Natural II forma parte del plan del Master en Inteligencia Artificial (MIA) de la UBA y constituye la base teórica y práctica para comprender cómo las computadoras procesan, representan y generan lenguaje humano.
 
-Durante el curso se abordan conceptos clave como:
+---
 
-* Representación vectorial del lenguaje
-* Embeddings (estáticos y contextuales)
-* Tokenización y chunking
-* Preprocesamiento de texto
-* Recuperación de información (IR)
-* Similaridad semántica
-* Introducción a modelos Transformer y embeddings modernos
+El Trabajo Práctico 1 de la materia Procesamiento del Lenguaje Natural II tiene como objetivo introducir al alumno en los fundamentos prácticos del análisis del lenguaje natural utilizando técnicas clásicas y modelos de aprendizaje automático.
 
-Los trabajos prácticos permiten aplicar estos conceptos en desarrollos reales orientados al análisis y modelado de texto.
+Este trabajo sienta las bases del PLN moderno, reforzando conceptos esenciales como:
+
+  * procesamiento y limpieza de texto
+  * tokenización
+  * representación vectorial
+  * embeddings tradicionales,
+  * modelos de clasificación de texto,
+  * entrenamiento supervisado,
+  * evaluación de métricas,
+  * análisis de resultados.
+
+🎯 Objetivos del TP1
+
+  * Comprender y aplicar técnicas de preprocesamiento de texto.
+  * Analizar distintas representaciones vectoriales:
+      * Bag of Words (BoW)
+      * TF-IDF
+      * Embeddings distribucionales
+
+  * Entrenar modelos supervisados de clasificación.
+  * Evaluar desempeño mediante métricas estándar (accuracy, f1-score, pérdida).
+  * Explorar distintos hiperparámetros y observar su impacto.
+  * Implementar ciclos de entrenamiento utilizando un trainer modular (según trainer.py).
+  * Realizar análisis experimental a través de notebooks (según trabajo_practico_1.ipynb).
+
+🛠️ Tecnologías y librerías utilizadas en el TP1
+
+El trabajo práctico incorpora un conjunto de herramientas orientadas al PLN clásico y aprendizaje automático:
+
+✔️ Procesamiento de texto
+
+  * NLTK
+  * spaCy
+  * regex
+  * Normalización y tokenización
+
+✔️ Representación vectorial
+
+  * scikit-learn (CountVectorizer, TF-IDF)
+  * Embeddings básicos utilizados en modelos lineales o feed-forward
+
+✔️ Modelado y entrenamiento
+
+  * PyTorch — para modelos simples de clasificación
+  * trainer.py — módulo propio para:
+    * entrenamiento estructurado
+    * early stopping
+    * evaluación
+    * métricas
+    * manejo de batches y optimización
+
+✔️ Experimentación
+
+  * Jupyter Notebook (trabajo_practico_1.ipynb)
+    * análisis exploratorio
+    * experimentos
+    * comparación de modelos
+    * reflexiones finales
+
+📄 Resultado del TP1
+
+El resultado final es un pipeline completo que abarca:
+
+1. Lectura y procesamiento del corpus
+2 .Vectorización del texto mediante métodos clásicos
+3. Entrenamiento de un modelo de clasificación usando PyTorch
+4. Implementación de un “trainer” modular para facilitar experimentos
+5. Evaluación mediante métricas y análisis de desempeño
 
 ---
 
