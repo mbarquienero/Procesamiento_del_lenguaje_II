@@ -1,73 +1,103 @@
 # Procesamiento del lenguaje natural II
 
-🧠 Introducción
+Introducción
 
-La materia Procesamiento del Lenguaje Natural II forma parte del plan de estudios del Master en Inteligencia Artificial (MIA) de la UBA.
-Su propósito es introducir los fundamentos teóricos y prácticos del análisis y modelado del lenguaje natural mediante técnicas modernas de extracción, representación y procesamiento de texto.
+La materia Procesamiento del Lenguaje Natural I (PLN1) forma parte del plan del Master en Inteligencia Artificial (MIA) y constituye la base teórica y práctica para comprender cómo las computadoras procesan, representan y generan lenguaje humano.
 
-A lo largo del curso se abordan temas como:
+Durante el curso se abordan conceptos clave como:
 
-Representación vectorial del lenguaje
+* Representación vectorial del lenguaje
 
-Embeddings (estáticos y contextuales)
+* Embeddings (estáticos y contextuales)
 
-Recuperación de información (IR)
+* Tokenización y chunking
 
-Similaridad semántica
+* Preprocesamiento de texto
 
-Preprocesamiento de texto
+* Recuperación de información (IR)
 
-Tokenización y chunking
+* Similaridad semántica
 
-Introducción a modelos tipo Transformer y sus embeddings
+* Introducción a modelos Transformer y embeddings modernos
 
-Los trabajos prácticos permiten llevar estos conceptos a la práctica mediante la implementación de sistemas reales basados en NLP.
+Los trabajos prácticos permiten aplicar estos conceptos en desarrollos reales orientados al análisis y modelado de texto.
 
 📝 Trabajo Práctico 1 — Chatbot con RAG (Retrieval-Augmented Generation)
 
-El TP1 consiste en implementar un chatbot capaz de generar respuestas utilizando la técnica de Retrieval-Augmented Generation (RAG).
-El objetivo central es que el modelo no dependa únicamente de su conocimiento interno, sino que pueda recuperar información desde una base de documentos vectorizados (en este caso, el CV del alumno) y generar respuestas fundamentadas.
+El objetivo del TP1 es implementar un chatbot que utilice información externa almacenada en una base vectorial para responder preguntas, aplicando la arquitectura RAG (Retrieval-Augmented Generation).
 
-✔️ Objetivos del TP1
+El sistema debe ser capaz de:
 
-Procesar un documento PDF (CV del alumno).
+Leer y procesar un documento PDF (en este caso, el CV del alumno).
 
-Extraer el texto, limpiarlo y segmentarlo correctamente (chunking).
+Limpiar y segmentar el texto en fragmentos (chunking).
 
 Generar embeddings para cada fragmento del CV.
 
-Indexar los embeddings en una base vectorial.
+Almacenar esos embeddings en una base vectorial.
 
-Implementar un sistema de recuperación semántica (retriever).
+Recuperar los fragmentos más relevantes ante una consulta.
 
-Integrar el contexto recuperado con un modelo generativo vía RAG.
-
-Construir una interfaz conversacional usando Streamlit.
+Utilizar un modelo generativo para construir una respuesta final basada en el contexto recuperado.
 
 ✔️ Tecnologías y librerías utilizadas
 
 Python 3.11
 
-Streamlit – interfaz web interactiva
+Streamlit — interfaz gráfica para el chatbot
 
-PyPDF2 / pdfminer.six – extracción de texto desde PDF
+PyPDF2 / pdfminer.six — extracción de texto desde PDF
 
-Pinecone – base vectorial para almacenamiento de embeddings
+Pinecone — base vectorial utilizada para indexación semántica
 
-Sentence-Transformers / bge-small-en / all-mpnet-base-v2 – embeddings semánticos
+Sentence-Transformers / BGE / MPNet — modelos de embeddings
 
-LLM vía API (Groq / Llama 3) – generación de respuestas
+Groq (Llama 3) — modelo generativo para la respuesta final
 
-Similitud coseno / búsqueda KNN
+dotenv — manejo de claves y variables de entorno
 
-dotenv – manejo de claves y configuración
+Similitud coseno / búsqueda k-NN — mecanismo de recuperación
 
-✔️ Resultado final
+✔️ Flujo general del TP1
 
-Un chatbot funcional capaz de responder preguntas sobre el CV del alumno mediante:
+Ingestión del CV
 
-Recuperación semántica (Retriever)
+Lectura del PDF
+
+Limpieza del texto
+
+Segmentación en chunks
+
+Generación de embeddings
+
+Subida a Pinecone
+
+Recuperación de información (Retriever)
+
+Para cada pregunta del usuario
+
+Se generan embeddings de la consulta
+
+Se buscan los chunks más cercanos en la base vectorial
+
+Generación de respuesta (RAG)
+
+Se construye un contexto a partir de los chunks recuperados
+
+Se envía el contexto + pregunta al modelo
+
+El modelo genera una respuesta fundamentada
+
+✔️ Resultado del TP1
+
+El resultado final es un chatbot funcional que responde preguntas sobre el CV del alumno utilizando:
+
+Recuperación semántica
 
 Construcción de contexto
 
-Generación aumentada (RAG)
+Generación aumentada con LLM
+
+Interfaz lista para usar desde Streamlit
+
+El sistema garantiza respuestas precisas, fundamentadas y basadas directamente en la información del documento original.
