@@ -81,7 +81,7 @@ El resultado final es un pipeline completo que abarca:
 
 📝 Trabajo Práctico 2 — Chatbot con RAG (Retrieval-Augmented Generation)
 
-<img width="1792" height="633" alt="image" src="https://github.com/user-attachments/assets/f723b4b9-909d-4741-9095-5fc570048de1" />
+<img width="2543" height="730" alt="image" src="https://github.com/user-attachments/assets/a6fa6875-faee-4424-8684-de4147385067" />
 
 El objetivo del TP2 es implementar un chatbot que utilice información externa almacenada en una base vectorial para responder preguntas, aplicando la arquitectura RAG (Retrieval-Augmented Generation).
 
