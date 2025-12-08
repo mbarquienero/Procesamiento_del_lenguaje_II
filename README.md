@@ -39,43 +39,43 @@ El trabajo práctico incorpora un conjunto de herramientas orientadas al PLN cl�
 
 ✔️ Procesamiento de texto
 
-  * NLTK
-  * spaCy
-  * regex
-  * Normalización y tokenización
+   * NLTK
+   * spaCy
+   * regex
+   * Normalización y tokenización
 
 ✔️ Representación vectorial
 
-  * scikit-learn (CountVectorizer, TF-IDF)
-  * Embeddings básicos utilizados en modelos lineales o feed-forward
+   * scikit-learn (CountVectorizer, TF-IDF)
+   * Embeddings básicos utilizados en modelos lineales o feed-forward
 
 ✔️ Modelado y entrenamiento
 
-  * PyTorch — para modelos simples de clasificación
-  * trainer.py — módulo propio para:
-    * entrenamiento estructurado
-    * early stopping
-    * evaluación
-    * métricas
-    * manejo de batches y optimización
+   * PyTorch — para modelos simples de clasificación
+   * trainer.py — módulo propio para:
+     * entrenamiento estructurado
+     * early stopping
+     * evaluación
+     * métricas
+     * manejo de batches y optimización
 
 ✔️ Experimentación
 
-  * Jupyter Notebook (trabajo_practico_1.ipynb)
-    * análisis exploratorio
-    * experimentos
-    * comparación de modelos
-    * reflexiones finales
+   * Jupyter Notebook (trabajo_practico_1.ipynb)
+     * análisis exploratorio
+     * experimentos
+     * comparación de modelos
+     * reflexiones finales
 
 📄 Resultado del TP1
 
 El resultado final es un pipeline completo que abarca:
 
-1. Lectura y procesamiento del corpus
-2 .Vectorización del texto mediante métodos clásicos
-3. Entrenamiento de un modelo de clasificación usando PyTorch
-4. Implementación de un “trainer” modular para facilitar experimentos
-5. Evaluación mediante métricas y análisis de desempeño
+ 1. Lectura y procesamiento del corpus
+ 2 .Vectorización del texto mediante métodos clásicos
+ 3. Entrenamiento de un modelo de clasificación usando PyTorch
+ 4. Implementación de un “trainer” modular para facilitar experimentos
+ 5. Evaluación mediante métricas y análisis de desempeño
 
 ---
 
@@ -85,12 +85,12 @@ El objetivo del TP2 es implementar un chatbot que utilice información externa a
 
 El sistema debe ser capaz de:
 
-* Leer y procesar un documento PDF (en este caso, el CV del alumno).
-* Limpiar y segmentar el texto en fragmentos (chunking).
-* Generar embeddings para cada fragmento del CV.
-* Almacenar esos embeddings en una base vectorial.
-* Recuperar los fragmentos más relevantes ante una consulta.
-* Utilizar un modelo generativo para construir una respuesta final basada en el contexto recuperado.
+ * Leer y procesar un documento PDF (en este caso, el CV del alumno).
+ * Limpiar y segmentar el texto en fragmentos (chunking).
+ * Generar embeddings para cada fragmento del CV.
+ * Almacenar esos embeddings en una base vectorial.
+ * Recuperar los fragmentos más relevantes ante una consulta.
+ * Utilizar un modelo generativo para construir una respuesta final basada en el contexto recuperado.
 
 ✔️ Tecnologías y librerías utilizadas
 
