@@ -73,3 +73,16 @@ El resultado final es un chatbot funcional que responde preguntas sobre el CV de
   * Generación aumentada con LLM
   * Interfaz lista para usar desde Streamlit
   * El sistema garantiza respuestas precisas, fundamentadas y basadas directamente en la información del documento original.
+
+
+✔️ Directorio
+
+ TP2/
+ ├── app.py                 # Aplicación principal en Streamlit. Orquesta el pipeline RAG y la interfaz del chatbot.
+ ├── ingest_cv.py           # Script de ingestión del CV: extrae texto, genera embeddings y sube los vectores a Pinecone.
+ ├── retriever_cv.py        # Módulo de recuperación semántica: busca los chunks más relevantes en el índice vectorial.
+ ├── requirements.txt       # Listado de dependencias necesarias para ejecutar todo el TP1.
+ ├── data/
+ │   ├── cv_mauro.pdf       # CV del alumno utilizado como base documental para el sistema RAG.
+ └── README.md              # Documentación detallada del TP1 con instrucciones, arquitectura y descripción del proyecto.
+
