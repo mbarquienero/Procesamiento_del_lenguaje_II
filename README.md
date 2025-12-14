@@ -142,4 +142,27 @@ El resultado final es un chatbot funcional que responde preguntas sobre el CV de
 
 <img width="990" height="161" alt="image" src="https://github.com/user-attachments/assets/250f50bf-8c20-42e2-bdb9-d99e63a24120" />
 
+---
+
+📝 Trabajo Práctico 3 — Sistema Multi-Agente con RAG sobre CVs
+
+El objetivo del Trabajo Práctico 3 es extender la arquitectura RAG desarrollada en el TP2 hacia un escenario multi-agente, donde cada agente representa un perfil profesional distinto (CV independiente) y responde consultas de manera aislada, controlada y contextualizada.
+
+El foco principal del trabajo está en:
+
+* la orquestación de múltiples agentes,
+* el aislamiento estricto de contexto por agente,
+* y la correcta utilización de RAG para responder consultas simples y comparativas sin contaminación de información entre perfiles.
+
+🎯 Objetivos del TP3
+
+* Implementar un sistema multi-agente, donde:
+   * cada agente tiene su propio CV,
+   * su propio índice vectorial,
+   * y su propio contexto de respuesta.
+
+* Garantizar que cada agente responda únicamente con la información de su CV.
+* Diseñar un router de agentes que detecte qué perfiles deben activarse según la consulta.
+
+
 
