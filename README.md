@@ -142,9 +142,22 @@ El resultado final es un chatbot funcional que responde preguntas sobre el CV de
 
 <img width="990" height="161" alt="image" src="https://github.com/user-attachments/assets/250f50bf-8c20-42e2-bdb9-d99e63a24120" />
 
+✔️ Ejecución
+Ejecución di;amica: 
+1) python ingest_cv.py --persona mauro --cv data/cv_mauro.pdf
+python ingest_cv.py --persona ana   --cv data/cv_ana.pdf
+python ingest_cv.py --persona juan  --cv data/cv_juan.pdf
+python ingest_cv.py --persona pedro --cv data/cv_pedro.pdf
+
+2) python retriever_cv.py
+
+3) streamlit run app.py
+
 ---
 
-📝 Trabajo Práctico 3 — Sistema Multi-Agente con RAG sobre CVs
+📝 Trabajo Práctico 3 — Sistema Multi-Agente sobre CVs
+
+<img width="2555" height="715" alt="image" src="https://github.com/user-attachments/assets/918b2d72-3d0e-4258-9b90-86d27b95572e" />
 
 El objetivo del Trabajo Práctico 3 es extender la arquitectura RAG desarrollada en el TP2 hacia un escenario multi-agente, donde cada agente representa un perfil profesional distinto (CV independiente) y responde consultas de manera aislada, controlada y contextualizada.
 
@@ -163,6 +176,17 @@ El foco principal del trabajo está en:
 
 * Garantizar que cada agente responda únicamente con la información de su CV.
 * Diseñar un router de agentes que detecte qué perfiles deben activarse según la consulta.
+
+✔️ Ejecución
+Ejecución di;amica: 
+1) python ingest_cv.py --persona mauro --cv data/cv_mauro.pdf
+python ingest_cv.py --persona ana   --cv data/cv_ana.pdf
+python ingest_cv.py --persona juan  --cv data/cv_juan.pdf
+python ingest_cv.py --persona pedro --cv data/cv_pedro.pdf
+
+2) python retriever_cv.py
+
+3) streamlit run app.py
 
 
 
